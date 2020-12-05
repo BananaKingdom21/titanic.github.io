@@ -3,11 +3,13 @@ var game = null;
 var titanicX = event.clientX;
 
 //game stuff
-document.getElementById("gamestart").addEventListener("click",startgame);
+var startingGame = document.getElementById("gamestart");
+startingGame.addEventListener("click",startgame);
 
 function startgame () {
   game = true;
 };
+
 
 if (game = true) {
   while (game = true) {
