@@ -14,7 +14,7 @@ startingGame.addEventListener("click",startgame);
 if (game = true) {
   while (game = true) {
     
-    document.getElementById("game").backgroundImage = "url("https:/e7.pngegg.com/pngimages/546/604/png-clipart-water-free-content-water-background-s-blue-angle.png")";
+    document.getElementById("game").backgroundColor = blue;
     document.getElementById("game").innerHTML = "";
     
   }
