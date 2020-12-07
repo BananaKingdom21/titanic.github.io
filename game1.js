@@ -4,11 +4,11 @@ var titanicX = event.clientX;
 
 //game stuff
 var startingGame = document.getElementById("gamestart");
-startingGame.addEventListener("click",startgame);
 
 function startgame () {
   game = true;
 };
+startingGame.addEventListener("click",startgame);
 
 
 if (game = true) {
