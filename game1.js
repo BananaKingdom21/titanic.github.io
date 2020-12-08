@@ -11,7 +11,7 @@ var gameAreaJs = document.getElementById("gameArea");
 function StartTheGame () {
   game = 1;
 }
-/*
+
 buttonStart.addEventListener("click", StartTheGame);
 
 //Where game is working.
@@ -31,4 +31,4 @@ if (gamePlay = 1) {
     requestAnimationFrame(game);
     }
 }
-*/
+
