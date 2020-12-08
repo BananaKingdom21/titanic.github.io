@@ -9,7 +9,7 @@ var gameAreaJs = document.getElementById("gameArea");
 
 //Where game starts.
 function StartTheGame () {
-  game = 1;
+  game = game + 1;
 }
 
 buttonStart.addEventListener("click", StartTheGame);
@@ -17,7 +17,7 @@ buttonStart.addEventListener("click", StartTheGame);
 //Where game is working.
 function game () {
   
-  gameAreaJs.innerHTML = "test";
+  gameAreaJs.innerHTML = test;
   
   
   requestAnimationFrame(game);
