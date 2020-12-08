@@ -1,7 +1,7 @@
 /*epic variables*/
 
 var loopTimer = 1;
-var gameplay = 0;
+var gamePlay = 0;
 var buttonStart = document.getElementById("StartGameButton");
 var gameAreaJs = document.getElementById("gameArea");
 
@@ -20,14 +20,14 @@ function game () {
   gameAreaJs.innerHTML = "";
   
   
-  requestAnimationFrame();
+  window.requestAnimationFrame(game);
 }
 //Where game is executed.
 while (loopTimer > 0) {
   
   loopTimer = loopTimer + 1;
   
-if (game = 1) {
-    game();
+if (gamePlay = 1) {
+    window.requestAnimationFrame(game);
     }
 }
