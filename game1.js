@@ -20,7 +20,7 @@ function game () {
   gameAreaJs.innerHTML = "";
   
   
-  window.requestAnimationFrame(game);
+  requestAnimationFrame(game);
 }
 //Where game is executed.
 while (loopTimer > 0) {
@@ -28,6 +28,6 @@ while (loopTimer > 0) {
   loopTimer = loopTimer + 1;
   
 if (gamePlay = 1) {
-    window.requestAnimationFrame(game);
+    requestAnimationFrame(game);
     }
 }
