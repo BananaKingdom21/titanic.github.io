@@ -11,13 +11,13 @@ var gameAreaJs = document.getElementById("gameArea");
 function StartTheGame () {
   game = 1;
 }
-
+/*
 buttonStart.addEventListener("click", StartTheGame);
 
 //Where game is working.
 function game () {
   
-  gameAreaJs.innerHTML = "";
+  gameAreaJs.innerHTML = "test";
   
   
   requestAnimationFrame(game);
@@ -31,3 +31,4 @@ if (gamePlay = 1) {
     requestAnimationFrame(game);
     }
 }
+*/
