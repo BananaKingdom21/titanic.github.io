@@ -5,7 +5,7 @@ var gamePlay = 0;
 var button = document.querySelector("button");
 var gameAreajs = document.getElementById("gameArea");
 
-gameAreajs.innerHTML = 
+gameAreajs.textContent = "hello";
 
 /*game stuff*/
 
@@ -16,6 +16,6 @@ function StartTheGame () {
 
 
 button.onclick = function () {
-  gameAreajs.innerHTML = ;
+  gameAreajs.innerHTML = "";
 }
 
