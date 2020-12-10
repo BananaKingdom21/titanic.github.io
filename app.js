@@ -2,7 +2,7 @@
 
 var loopTimer = 1;
 var gamePlay = 0;
-let buttonStart = document.getElementById("StartGameButton");
+let button = document.querySelector("button");
 let gameAreajs = document.getElementById("gameArea");
 
 /*game stuff*/
@@ -12,6 +12,6 @@ function StartTheGame () {
   gamePlay = gamePlay + 1;
 }
 
-buttonStart.onclick = function () {
+button.onclick = function () {
   gameAreajs.innerHTML = "hello";
 }
