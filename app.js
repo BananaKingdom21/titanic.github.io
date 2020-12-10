@@ -5,7 +5,7 @@ var gamePlay = 0;
 var button = document.querySelector("button");
 var gameAreajs = document.getElementById("gameArea");
 
-gameAreajs.innerHTML = ;
+gameAreajs.innerHTML = 
 
 /*game stuff*/
 
