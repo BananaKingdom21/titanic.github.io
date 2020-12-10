@@ -2,10 +2,11 @@
 
 var loopTimer = 1;
 var gamePlay = 0;
-let button = document.querySelector("button");
-let gameAreajs = document.getElementById("gameArea");
+var button = document.querySelector("button");
+var gameAreajs = document.getElementById("gameArea");
 
 gameAreajs.innerHTML = ;
+
 /*game stuff*/
 
 //Where game starts.
