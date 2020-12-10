@@ -12,6 +12,8 @@ function StartTheGame () {
   gamePlay = gamePlay + 1;
 }
 
+gameAreajs.innerHTML = "hello";
+
 button.onclick = function () {
   gameAreajs.innerHTML = "hello";
 }
