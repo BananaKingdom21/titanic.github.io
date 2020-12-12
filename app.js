@@ -5,7 +5,7 @@ var gameAreajs = document.getElementById("gameArea");
 var iceMove = 0;
 var ice1 = document.getElementById("gameIce1");
 
-gameCodeYay = function () {
+function gameCodeYay () {
   ice1.style.top = iceMove + 5 +"px";
   
   gameCodeYay();
