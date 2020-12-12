@@ -55,4 +55,7 @@ p {
   border: 3px solid navy;
   border-bottom: 18px solid navy;
 }
+ #gameIce1 {
+   position: relative;
+}
    
