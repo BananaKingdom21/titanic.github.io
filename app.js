@@ -1,16 +1,20 @@
 
 //game stuff
 
-var gamePlay = 0;
+var gameAreajs = document.getElementById("gameArea");
+var iceMove = 0;
+var ice1 = document.getElementById("gameIce1");
 
-function StartTheGame () {
-  gamePlay = gamePlay + 1;
+gameCodeYay = function () {
+  ice1.style.top = iceMove + 5 +"px";
+  
+  gameCodeYay();
 }
 
-var gameAreajs = document.getElementById("gameArea");
 var button = document.querySelector("button");
 
 button.onclick = function () {
   gameAreajs.innerHTML = "";
+  gameCodeYay();
 }
 
