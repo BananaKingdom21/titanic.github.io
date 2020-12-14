@@ -12,6 +12,7 @@ function gameCodeYay () {
   superCoolTestTimer = superCoolTestTimer + 1;
   if (superCoolTestTimer >= 999) {
     console.clear();
+    superCoolTestTimer = 0;
   }
   
   gameCodeYay();
