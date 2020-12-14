@@ -6,7 +6,7 @@ var iceMove = 0;
 var ice1 = document.getElementById("gameIce1");
 
 function gameCodeYay () {
-  ice1.style.top = iceMove + 5 +"px";
+  ice1.top = iceMove + 5 +"px";
   
   gameCodeYay();
 }
