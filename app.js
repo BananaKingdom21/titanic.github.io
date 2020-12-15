@@ -2,26 +2,23 @@
 //game stuff
 
 var gameAreajs = document.getElementById("gameArea");
-var iceMove = 0;
 var ice1 = document.getElementById("gameIce1");
-var superCoolTestTimer = 0;
-
-function gameCodeYay () {
-  
-  console.log(superCoolTestTimer);
-  superCoolTestTimer = superCoolTestTimer + 1;
-  if (superCoolTestTimer >= 999) {
-    console.clear();
-    superCoolTestTimer = 0;
-  }
-  
-  gameCodeYay();
-}
+var playGame = 0;
 
 var button = document.querySelector("button");
 
 button.onclick = function () {
   gameAreajs.innerHTML = "";
-  gameCodeYay();
+  playGame = 1;
 }
 
+function gameCode () {
+  requestAnimationFrame(gameCode);
+  
+  if (playGame === 1) {
+    
+    console.log("test");
+      
+      }  
+}
+requestAnimationFrame(gameCode);
