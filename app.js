@@ -8,17 +8,36 @@ var playGame = 0;
 var button = document.querySelector("button");
 
 button.onclick = function () {
-  gameAreajs.innerHTML = "";
+  gameAreajs.innerHTML = "<canvas id=mycanvas width="400" height="400"></canvas>";
   playGame = 1;
 }
 
+//super cool canvas stuff
+var supercoolcanvas = document.getElementById("myCanvas");
+var ctx = supercoolcanvas.getContext("2d");
+
+//circle code stuff
+function ellipse (x, y, size, color) {
+  ctx.beginPath();
+  ctx.arc(x, y, size, 0, 2 * Math.PI);
+  ctx.fillStyle = color;
+  ctx.fill();
+  
+}
+
+//actuall game stuff
 function gameCode () {
   requestAnimationFrame(gameCode);
   
   if (playGame === 1) {
     
-    console.log("test");
+    
       
       }  
 }
 requestAnimationFrame(gameCode);
+var colorStuff = {
+  red: "red";
+}
+
+ellipse(200, 200, 100, colorStuff.red);
