@@ -16,6 +16,11 @@ button.onclick = function () {
 var supercoolcanvas = document.getElementById("myCanvas");
 var ctx = supercoolcanvas.getContext("2d");
 
+//color stuff
+var coloring = {
+  red: "red"
+}
+
 //circle code stuff
 function ellipse (x, y, size, color) {
   ctx.beginPath();
@@ -36,8 +41,6 @@ function gameCode () {
       }  
 }
 requestAnimationFrame(gameCode);
-var colorStuff = {
-  red: "red";
-}
 
-ellipse(200, 200, 100, colorStuff.red);
+//cool circle test
+ellipse(200, 200, 100, coloring.red);
