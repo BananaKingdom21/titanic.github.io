@@ -25,6 +25,10 @@ function ellipse (x, y, size, color) {
   ctx.fill();
   
 }
+function rect (x, y, width, height) {
+  ctx.beginPath();
+  ctx.fillRect(x, y, width, height);
+}
 
 //actuall game stuff
 function gameCode () {
