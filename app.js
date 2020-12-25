@@ -44,9 +44,6 @@ y6:-1050, x6:120,
 //Land
 var Land = -1800;
 
-//Random Fact
-var Fact = random(1,16);
-
 //Add Movement
 draw = function() {
     //Water
@@ -108,59 +105,6 @@ Icy();
 
 //land
 image(getImage("cute/RampSouth"), 0, Land, 400, 400);
-
-//Facts
-var FunFacts = function(){
-textAlign(CENTER,CENTER);
-fill(20, 0, 0);
-textSize(20);
-
-if(Fact >0 && Fact <2){
-text("La vitesse maximale du Titanic était de 23knots.",0,-30,400,100); }
-
-if(Fact >=2 && Fact <3){
-text("Le Titanic avait un jumeau l’Olympic.",0,-30,400,100); }
-
-if(Fact >=3 && Fact <4){
-text("Il y avait 3 cuisines sur le Titanic.",0,-30,400,100); }
-
-if(Fact >=4 && Fact <5){
-text("Il y avait seulement 20 canots de sauftage sur le Titanic mais il aurait dû en avoir 40.",0,-30,400,100); }
-
-if(Fact >=5 && Fact <6){
-  text("2 personnes sont mort en construisant le Titanic.",0,-30,400,100); }  
-
-if(Fact >=6 && Fact <7){
-text("Edward Smith était le capitaine du Titanic quand il a couler.",0,-30,400,100); }
-
-if(Fact >=7 && Fact <8){
-text("Le RMS Carpathia avait transporté les survivants à New-York.",0,-30,400,100); } 
-
-if(Fact >=8 && Fact <9){
-text("Le Titanic a reçu 6 avertissements d’icebergs durant le voyage tragic.",0,-30,400,100); }
-
-if(Fact >=9 && Fact <10){
-text("2 des 9 chiens sur le Titanic on survécu.",0,-30,400,100); }
-
-if(Fact >=10 && Fact <11){
-text("Il y avait 885 personnes dans l’équipage du Titanic",0,-30,400,100); }
-
-if(Fact >=11 && Fact <12){
-text("Le Titanic brulait 600tonnes de charbon tous les jours.",0,-30,400,100); }
-
-if(Fact >=12 && Fact <13){
-text("Le Titanic mesurait 269mètres de longeur.",0,-30,400,100); }
-
-if(Fact >=13 && Fact <14){
-text("Il y avait une piscine sur le Titanic.",0,-30,400,100);}
-
-if(Fact >=14 && Fact <15){
-text("RMS veut dire <<Royal-Mail-Ship>>.",0,-30,400,100); }  
-
-if(Fact >=15 && Fact <16){
-text("Le Titanic a coulé entre le 14 et 15 avril 1912.",0,-30,400,100); }   
-};
-FunFacts();
 
 //Normal Speed 5 (Hard 8)
 var speed = 5;
