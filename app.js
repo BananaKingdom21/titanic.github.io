@@ -76,7 +76,7 @@ function gameCode () {
   if (playGame === 1) {
 
 //background
-    ctx.drawImage(water, 0, 0);
+ctx.drawImage(water, 0, 0);
 
 //Icebergs
 fill("rgb(0, 200, 200)");
@@ -84,7 +84,6 @@ stroke("rgb(0,150,150)");
 strokeWeight(10);
 
 //Ice1
-var Icy = function(){
 circle(Ice.x1, Ice.y1, 200, 60);
 
 circle(Ice.x1, Ice.y1 -20, 55);
@@ -129,11 +128,10 @@ circle(Ice.x6, Ice.y6, 130);
 circle(Ice.x6 +60, Ice.y6 +10, 90);
 circle(Ice.x6 -80, Ice.y6 +10, 85);
 circle(Ice.x6, Ice.y6, 70);
-};
-Icy();
-
+  
 //land
 
+  
 //speed
 var speed = 5;
 Ice.y1 = Ice.y1 + speed;
@@ -157,45 +155,45 @@ Land = Land + speed;
     if (boatMoveSide === 2) {
         boatX = boatX + 3;
         }
-    
-ctx.drawImage(boat, boatX, 275);
+    if (boatMoveSide === 0) {
+        boatX = boatX + 0
+        }
+    ctx.drawImage(boat, boatX, 275);
 
 //Detect Collision
-function hit (){
-  
   if(mouseX <=1){cancelAnimationFrame(gameCode);}
   
   if(mouseX >=399){cancelAnimationFrame(gameCode);}
       
-if(Ice.y1 +90 >=315 && Ice.y1 -90 <=250 && mouseX +4 >=100 && mouseX -4 <=300){cancelAnimationFrame(gameCode);}
+if(Ice.y1 +90 >=315 && Ice.y1 -90 <=250 && boatX +4 >=100 && boatX -4 <=300){cancelAnimationFrame(gameCode);}
     
-if(Ice.y2 +105 >=315 && Ice.y2 -105 <=250 && mouseX +4 >=0 && mouseX -4 <=150){cancelAnimationFrame(gameCode);}
+if(Ice.y2 +105 >=315 && Ice.y2 -105 <=250 && boatX +4 >=0 && boatX -4 <=150){cancelAnimationFrame(gameCode);}
   
-if(Ice.y3 +105 >=315 && Ice.y3 -105 <=250 && mouseX +4 >=250 && mouseX -4 <=400){cancelAnimationFrame(gameCode);}
+if(Ice.y3 +105 >=315 && Ice.y3 -105 <=250 && boatX +4 >=250 && boatX -4 <=400){cancelAnimationFrame(gameCode);}
 
-if(Ice.y4 +105 >=315 && Ice.y4 -105 <=250 && mouseX +4 >=0 && mouseX -4 <=275){cancelAnimationFrame(gameCode);}
+if(Ice.y4 +105 >=315 && Ice.y4 -105 <=250 && boatX +4 >=0 && boatX -4 <=275){cancelAnimationFrame(gameCode);}
     
-if(Ice.y5 +105 >=315 && Ice.y5 -105 <=250 && mouseX +4 >=95 && mouseX -4 <=400){cancelAnimationFrame(gameCode);}
+if(Ice.y5 +105 >=315 && Ice.y5 -105 <=250 && boatX +4 >=95 && boatX -4 <=400){cancelAnimationFrame(gameCode);}
     
-if(Ice.y6 +105 >=315 && Ice.y6 -105 <=250 && mouseX +4 >=0 && mouseX -4 <=285 ){cancelAnimationFrame(gameCode);}
- 
-};
-hit();
+if(Ice.y6 +105 >=315 && Ice.y6 -105 <=250 && boatX +4 >=0 && boatX -4 <=285 ){cancelAnimationFrame(gameCode);}
 
 //Hit Land
 if(Land >=-150){
   
 Speed = 0;
 
-    stroke(rgb(82, 82, 82));
-    fill(rgb(120, 120, 120));
-    rect(75,100,250,75);
+    stroke("rgb(82, 82, 82)");
+    fill("rgb(120, 120, 120)");
+    rectangle(75,100,250,75);
 
     
-    fill(rgb(0, 0, 0));
+    fill("rgb(0, 0, 0)");
     ctx.font = "30px Arial";
     text("New-York",200,120);
     ctx.font = "15px Arial";
     text("Le Titanic c’est rendu au port",200,150);
+  
+  cancelAnimationFrame(gameCode);
+}
 }
 requestAnimationFrame(gameCode);
