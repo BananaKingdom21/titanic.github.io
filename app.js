@@ -1,8 +1,6 @@
 
 var playGame = 0;
 
-var Titanic = document.getElementById("water");
-
 //moving titanic stuff
 var TitanicMouve = event.keyCode;
 
@@ -17,6 +15,7 @@ var supercoolcanvas = document.getElementById("myCanvas");
 var ctx = supercoolcanvas.getContext("2d");
 
 //titanic stuff
+var boat = document.getElementById("boat");
 var water = document.getElementById("water");
 
 //starting position stuff
@@ -32,13 +31,13 @@ var Land = -1800;
 var TitanicX = 200;
 
 //circle code stuff
-function ellipse (x, y, size) {
+function circle (x, y, size) {
   ctx.beginPath();
   ctx.arc(x, y, size, 0, 2 * Math.PI);
   ctx.fill();
 }
 //rectangle code stuff
-function rect (x, y, width, height) {
+function rectangle (x, y, width, height) {
   ctx.beginPath();
   ctx.fillRect(x, y, width, height);
 }
@@ -46,11 +45,17 @@ function rect (x, y, width, height) {
 function stroke (color) {
   ctx.strokeStyle = color;
 }
+//color shape stuff
 function fill (color) {
   ctx.fillStyle = color;
 }
+//word stuff
 function text (text, x, y) {
   ctx.fillText(text, x, y);
+}
+//line biger stuff
+function strokeWeight (size) {
+ctx.lineWidth = size;
 }
 
 //actuall game stuff
@@ -63,56 +68,56 @@ function gameCode () {
     ctx.drawImage(water, 0, 0);
 
 //Icebergs
-fill(rgb(0, 200, 200));
-stroke(rgb(0,150,150));
+fill("rgb(0, 200, 200)");
+stroke("rgb(0,150,150)");
 strokeWeight(10);
 
 //Ice1
 var Icy = function(){
-ellipse(Ice.x1, Ice.y1, 200, 60);
+circle(Ice.x1, Ice.y1, 200, 60);
 
-ellipse(Ice.x1, Ice.y1 -20, 55);
-ellipse(Ice.x1, Ice.y1 +10, 65);
-ellipse(Ice.x1 -20, Ice.y1, 90);
-ellipse(Ice.x1 +30, Ice.y1, 90);
+circle(Ice.x1, Ice.y1 -20, 55);
+circle(Ice.x1, Ice.y1 +10, 65);
+circle(Ice.x1 -20, Ice.y1, 90);
+circle(Ice.x1 +30, Ice.y1, 90);
 
 //Ice2
-ellipse(Ice.x2, Ice.y2 , 140, 70);
+circle(Ice.x2, Ice.y2 , 140, 70);
 
-ellipse(Ice.x2, Ice.y2 -20, 55);
-ellipse(Ice.x2, Ice.y2 +10, 55);
-ellipse(Ice.x2 -20, Ice.y2, 70);
-ellipse(Ice.x2 +20, Ice.y2 -10, 75);
+circle(Ice.x2, Ice.y2 -20, 55);
+circle(Ice.x2, Ice.y2 +10, 55);
+circle(Ice.x2 -20, Ice.y2, 70);
+circle(Ice.x2 +20, Ice.y2 -10, 75);
 
 //Ice3
-ellipse(Ice.x3, Ice.y3, 115);
+circle(Ice.x3, Ice.y3, 115);
 
-ellipse(Ice.x3, Ice.y3, 90);
-ellipse(Ice.x3 +20, Ice.y3, 85);
+circle(Ice.x3, Ice.y3, 90);
+circle(Ice.x3 +20, Ice.y3, 85);
 
 //Ice4
-ellipse(Ice.x4, Ice.y4, 165);
+circle(Ice.x4, Ice.y4, 165);
 
-ellipse(Ice.x4, Ice.y4, 120);
-ellipse(Ice.x4 +30, Ice.y4, 100);
-ellipse(Ice.x4 +50, Ice.y4 -10, 75);
-ellipse(Ice.x4 -40, Ice.y4 -10, 100);
+circle(Ice.x4, Ice.y4, 120);
+circle(Ice.x4 +30, Ice.y4, 100);
+circle(Ice.x4 +50, Ice.y4 -10, 75);
+circle(Ice.x4 -40, Ice.y4 -10, 100);
 
 //Ice5
-ellipse(Ice.x5, Ice.y5, 185);
+circle(Ice.x5, Ice.y5, 185);
 
-ellipse(Ice.x5, Ice.y5, 130);
-ellipse(Ice.x5 -60, Ice.y5 -10, 90);
-ellipse(Ice.x5 +80, Ice.y5 -10, 75);
-ellipse(Ice.x5, Ice.y5, 70);
+circle(Ice.x5, Ice.y5, 130);
+circle(Ice.x5 -60, Ice.y5 -10, 90);
+circle(Ice.x5 +80, Ice.y5 -10, 75);
+circle(Ice.x5, Ice.y5, 70);
 
 //Ice6
-ellipse(Ice.x6, Ice.y6, 185);
+circle(Ice.x6, Ice.y6, 185);
 
-ellipse(Ice.x6, Ice.y6, 130);
-ellipse(Ice.x6 +60, Ice.y6 +10, 90);
-ellipse(Ice.x6 -80, Ice.y6 +10, 85);
-ellipse(Ice.x6, Ice.y6, 70);
+circle(Ice.x6, Ice.y6, 130);
+circle(Ice.x6 +60, Ice.y6 +10, 90);
+circle(Ice.x6 -80, Ice.y6 +10, 85);
+circle(Ice.x6, Ice.y6, 70);
 };
 Icy();
 
@@ -129,7 +134,7 @@ Ice.y6 = Ice.y6 + speed;
 Land = Land + speed;
   
 //titanic stuff
-  
+ctx.drawImage(boat, boatX, boatY);
 
 //Detect Collision
 function hit (){
