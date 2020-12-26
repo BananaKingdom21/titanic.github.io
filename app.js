@@ -1,6 +1,11 @@
 
 var playGame = 0;
 
+var Titanic = document.getElementById("water");
+
+//moving titanic stuff
+var TitanicMouve = event.keyCode;
+
 var button = document.querySelector("button");
 
 button.onclick = function () {
@@ -10,6 +15,9 @@ button.onclick = function () {
 //super cool canvas stuff
 var supercoolcanvas = document.getElementById("myCanvas");
 var ctx = supercoolcanvas.getContext("2d");
+
+//titanic stuff
+var water = document.getElementById("water");
 
 //starting position stuff
   var Ice = {
@@ -21,15 +29,7 @@ y5:-850, x5:250,
 y6:-1050, x6:120,
 };
 var Land = -1800;
-
-//mouse cord stuff
-var mouseX = 200;
-supercoolcanvas.onmouseenter = function (){
-mouseX = event.clientX;
-}
-supercoolcanvas.onmouseleave = function (){
-mouseX = 0;
-}
+var TitanicX = 200;
 
 //circle code stuff
 function ellipse (x, y, size) {
@@ -44,13 +44,13 @@ function rect (x, y, width, height) {
 }
 //line color stuff
 function stroke (color) {
-ctx.strokeStyle = color;
+  ctx.strokeStyle = color;
 }
 function fill (color) {
   ctx.fillStyle = color;
 }
 function text (text, x, y) {
-ctx.fillText(text, x, y);
+  ctx.fillText(text, x, y);
 }
 
 //actuall game stuff
@@ -59,7 +59,8 @@ function gameCode () {
   
   if (playGame === 1) {
 
-
+//background
+    ctx.drawImage(water, 0, 0);
 
 //Icebergs
 fill(rgb(0, 200, 200));
@@ -127,12 +128,8 @@ Ice.y5 = Ice.y5 + speed;
 Ice.y6 = Ice.y6 + speed;
 Land = Land + speed;
   
-  function titanic (){
-
-  }
+//titanic stuff
   
-//Titanic
-Titanic();
 
 //Detect Collision
 function hit (){
@@ -160,19 +157,15 @@ hit();
 if(Land >=-150){
   
 Speed = 0;
-  
-T = T +1;
-if (T >= 24){
-    stroke(82, 82, 82);
+
+    stroke(rgb(82, 82, 82));
     fill(rgb(120, 120, 120));
     rect(75,100,250,75);
 
     
-    if(T >= 36){
     fill(rgb(0, 0, 0));
     ctx.font = "30px Arial";
     text("New-York",200,120);
-    if(T >= 72){
     ctx.font = "15px Arial";
     text("Le Titanic c’est rendu au port",200,150);
 }
