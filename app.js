@@ -18,6 +18,17 @@ var ctx = supercoolcanvas.getContext("2d");
 var boat = document.getElementById("boat");
 var water = document.getElementById("water");
 
+//control mouvement titanic
+var boatX = 200;
+var boatMoveSide = 0;
+
+function boatMoveX (event) {
+  var side = event.key;
+}
+function boatStopX () {
+  boatMoveSide = 0;
+}
+
 //starting position stuff
   var Ice = {
 y1:-200, x1:200,
@@ -134,7 +145,20 @@ Ice.y6 = Ice.y6 + speed;
 Land = Land + speed;
   
 //titanic stuff
-ctx.drawImage(boat, boatX, boatY);
+    if (side === "ArrowLeft") {
+        boatMoveSide = 1;
+        }
+    if (side === "ArrowRight") {
+        boatMoveSide = 2;
+        }
+    if (boatMoveSide === 1) {
+        boatX = boatX - 3;
+        }
+    if (boatMoveSide === 2) {
+        boatX = boatX + 3;
+        }
+    
+ctx.drawImage(boat, boatX, 275);
 
 //Detect Collision
 function hit (){
