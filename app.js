@@ -179,14 +179,10 @@ if(Ice.y6 +105 >=315 && Ice.y6 -105 <=250 && boatX +4 >=0 && boatX -4 <=285 ){ca
 
 //Hit Land
 if(Land >=-150){
-  
-Speed = 0;
-
     stroke("rgb(82, 82, 82)");
     fill("rgb(120, 120, 120)");
     rectangle(75,100,250,75);
-
-    
+  
     fill("rgb(0, 0, 0)");
     ctx.font = "30px Arial";
     text("New-York",200,120);
