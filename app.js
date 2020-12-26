@@ -2,7 +2,7 @@
 var playGame = 0;
 
 //moving titanic stuff
-var TitanicMouve = event.keyCode;
+var TitanicMouve = event.key;
 
 var button = document.querySelector("button");
 
