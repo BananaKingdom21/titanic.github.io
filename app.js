@@ -1,9 +1,6 @@
 
 var playGame = 0;
 
-//moving titanic stuff
-var TitanicMouve = event.key;
-
 var button = document.querySelector("button");
 
 button.onclick = function () {
@@ -21,12 +18,13 @@ var water = document.getElementById("water");
 //control mouvement titanic
 var boatX = 200;
 var boatMoveSide = 0;
+var side = undefined;
 
 function boatMoveX (event) {
-  var side = event.key;
+side = event.key;
 }
 function boatStopX () {
-  boatMoveSide = 0;
+boatMoveSide = 0;
 }
 
 //starting position stuff
@@ -156,7 +154,7 @@ Land = Land + speed;
         boatX = boatX + 3;
         }
     if (boatMoveSide === 0) {
-        boatX = boatX + 0
+        boatX = boatX - 0
         }
     ctx.drawImage(boat, boatX, 275);
 
