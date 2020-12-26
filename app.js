@@ -192,4 +192,5 @@ if(Land >=-150){
   cancelAnimationFrame(gameCode);
 }
 }
+}
 requestAnimationFrame(gameCode);
