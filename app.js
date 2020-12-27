@@ -73,7 +73,7 @@ function gameCode () {
   if (playGame === 1) {
 
 //background
-ctx.drawImage(water, 200, 200);
+ctx.drawImage(water, 0, 0, 800, 800);
 
 //Icebergs
 fill("rgb(0, 200, 200)");
@@ -155,7 +155,7 @@ Land = Land + speed;
     if (boatMoveSide === 0) {
         boatX = boatX - 0
         }
-    ctx.drawImage(boat, boatX, 100);
+    ctx.drawImage(boat, boatX, 200);
 
 //Detect Collision
   if(boatX <=0){cancelAnimationFrame(gameCode);}
