@@ -154,9 +154,9 @@ Land = Land + speed;
     ctx.drawImage(boat, boatX, 200, 120, 180);
 
 //Detect Collision
-  if(boatX <=0){cancelAnimationFrame(gameCode);}
+  if(boatX <=0){playGame = 0;}
   
-  if(boatX >=800){cancelAnimationFrame(gameCode);}
+  if(boatX >=800){playGame = 0;}
       
 if(Ice.y1 +180 >=630 && Ice.y1 -180 <=500 && boatX +8 >=200 && boatX -8 <=300){playGame = 0;}
     
