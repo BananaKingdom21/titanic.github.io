@@ -28,12 +28,12 @@ boatMoveSide = 0;
 
 //starting position stuff
   var Ice = {
-y1:-200, x1:200,
-y2:-385, x2:85,
-y3:-450, x3:325,
-y4:-650, x4:150,
-y5:-850, x5:250,
-y6:-1050, x6:120,
+y1:-200, x1:400,
+y2:-385, x2:170,
+y3:-450, x3:650,
+y4:-650, x4:300,
+y5:-850, x5:500,
+y6:-1050, x6:240,
 };
 var Land = -1800;
 var TitanicX = 200;
@@ -73,7 +73,7 @@ function gameCode () {
   if (playGame === 1) {
 
 //background
-ctx.drawImage(water, 0, 0);
+ctx.drawImage(water, 200, 200);
 
 //Icebergs
 fill("rgb(0, 200, 200)");
@@ -155,24 +155,24 @@ Land = Land + speed;
     if (boatMoveSide === 0) {
         boatX = boatX - 0
         }
-    ctx.drawImage(boat, boatX, 275);
+    ctx.drawImage(boat, boatX, 100);
 
 //Detect Collision
-  if(boatX <=1){cancelAnimationFrame(gameCode);}
+  if(boatX <=0){cancelAnimationFrame(gameCode);}
   
-  if(boatX >=399){cancelAnimationFrame(gameCode);}
+  if(boatX >=800){cancelAnimationFrame(gameCode);}
       
-if(Ice.y1 +90 >=315 && Ice.y1 -90 <=250 && boatX +4 >=100 && boatX -4 <=300){cancelAnimationFrame(gameCode);}
+if(Ice.y1 +180 >=630 && Ice.y1 -180 <=500 && boatX +8 >=200 && boatX -8 <=300){cancelAnimationFrame(gameCode);}
     
-if(Ice.y2 +105 >=315 && Ice.y2 -105 <=250 && boatX +4 >=0 && boatX -4 <=150){cancelAnimationFrame(gameCode);}
+if(Ice.y2 +210 >=630 && Ice.y2 -210 <=500 && boatX +8 >=0 && boatX -8 <=300){cancelAnimationFrame(gameCode);}
   
-if(Ice.y3 +105 >=315 && Ice.y3 -105 <=250 && boatX +4 >=250 && boatX -4 <=400){cancelAnimationFrame(gameCode);}
+if(Ice.y3 +210 >=630 && Ice.y3 -210 <=500 && boatX +8 >=250 && boatX -8 <=800){cancelAnimationFrame(gameCode);}
 
-if(Ice.y4 +105 >=315 && Ice.y4 -105 <=250 && boatX +4 >=0 && boatX -4 <=275){cancelAnimationFrame(gameCode);}
+if(Ice.y4 +210 >=630 && Ice.y4 -210 <=500 && boatX +8 >=0 && boatX -8 <=550){cancelAnimationFrame(gameCode);}
     
-if(Ice.y5 +105 >=315 && Ice.y5 -105 <=250 && boatX +4 >=95 && boatX -4 <=400){cancelAnimationFrame(gameCode);}
+if(Ice.y5 +210 >=630 && Ice.y5 -210 <=500 && boatX +8 >=95 && boatX -8 <=800){cancelAnimationFrame(gameCode);}
     
-if(Ice.y6 +105 >=315 && Ice.y6 -105 <=250 && boatX +4 >=0 && boatX -4 <=285 ){cancelAnimationFrame(gameCode);}
+if(Ice.y6 +210 >=630 && Ice.y6 -210 <=500 && boatX +8 >=0 && boatX -8 <=570 ){cancelAnimationFrame(gameCode);}
 
 //Hit Land
 if(Land >=-150){
