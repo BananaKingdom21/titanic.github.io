@@ -29,12 +29,12 @@ boatMoveSide = 0;
 
 //starting position stuff
   var Ice = {
-y1:-200, x1:400,
-y2:-385, x2:170,
-y3:-450, x3:650,
-y4:-650, x4:300,
-y5:-850, x5:500,
-y6:-1050, x6:240,
+y1:-400, x1:400,
+y2:-770, x2:170,
+y3:-900, x3:650,
+y4:-1300, x4:300,
+y5:-1700, x5:500,
+y6:-2100, x6:240,
 };
 var Land = -1800;
 var TitanicX = 200;
@@ -136,7 +136,7 @@ Land = Land + speed;
   
   if(boatX >=800){playGame = 0;}
       
-if(Ice.y1 +180 >=630 && Ice.y1 -180 <=500 && boatX +8 >=200 && boatX -8 <=300){playGame = 0;}
+if(Ice.y1 +180 >=630 && Ice.y1 -180 <=500 && boatX +8 >=200 && boatX -8 <=600){playGame = 0;}
     
 if(Ice.y2 +210 >=630 && Ice.y2 -210 <=500 && boatX +8 >=0 && boatX -8 <=300){playGame = 0;}
   
