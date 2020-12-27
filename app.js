@@ -81,7 +81,7 @@ stroke("rgb(0,150,150)");
 strokeWeight(10);
 
 //Ice1
-circle(Ice.x1, Ice.y1, 200, 30);
+circle(Ice.x1, Ice.y1, 30);
 
 circle(Ice.x1, Ice.y1 -20, 27.5);
 circle(Ice.x1, Ice.y1 +10, 32.5);
@@ -89,7 +89,7 @@ circle(Ice.x1 -20, Ice.y1, 45);
 circle(Ice.x1 +30, Ice.y1, 45);
 
 //Ice2
-circle(Ice.x2, Ice.y2 , 140, 35);
+circle(Ice.x2, Ice.y2,  35);
 
 circle(Ice.x2, Ice.y2 -20, 27.5);
 circle(Ice.x2, Ice.y2 +10, 27.5);
@@ -162,17 +162,17 @@ Land = Land + speed;
   
   if(boatX >=800){cancelAnimationFrame(gameCode);}
       
-if(Ice.y1 +180 >=630 && Ice.y1 -180 <=500 && boatX +8 >=200 && boatX -8 <=300){cancelAnimationFrame(gameCode);}
+if(Ice.y1 +180 >=630 && Ice.y1 -180 <=500 && boatX +8 >=200 && boatX -8 <=300){playGame = 0;}
     
-if(Ice.y2 +210 >=630 && Ice.y2 -210 <=500 && boatX +8 >=0 && boatX -8 <=300){cancelAnimationFrame(gameCode);}
+if(Ice.y2 +210 >=630 && Ice.y2 -210 <=500 && boatX +8 >=0 && boatX -8 <=300){playGame = 0;}
   
-if(Ice.y3 +210 >=630 && Ice.y3 -210 <=500 && boatX +8 >=250 && boatX -8 <=800){cancelAnimationFrame(gameCode);}
+if(Ice.y3 +210 >=630 && Ice.y3 -210 <=500 && boatX +8 >=250 && boatX -8 <=800){playGame = 0;}
 
-if(Ice.y4 +210 >=630 && Ice.y4 -210 <=500 && boatX +8 >=0 && boatX -8 <=550){cancelAnimationFrame(gameCode);}
+if(Ice.y4 +210 >=630 && Ice.y4 -210 <=500 && boatX +8 >=0 && boatX -8 <=550){playGame = 0;}
     
-if(Ice.y5 +210 >=630 && Ice.y5 -210 <=500 && boatX +8 >=95 && boatX -8 <=800){cancelAnimationFrame(gameCode);}
+if(Ice.y5 +210 >=630 && Ice.y5 -210 <=500 && boatX +8 >=95 && boatX -8 <=800){playGame = 0;}
     
-if(Ice.y6 +210 >=630 && Ice.y6 -210 <=500 && boatX +8 >=0 && boatX -8 <=570 ){cancelAnimationFrame(gameCode);}
+if(Ice.y6 +210 >=630 && Ice.y6 -210 <=500 && boatX +8 >=0 && boatX -8 <=570 ){playGame = 0;}
 
 //Hit Land
 if(Land >=-150){
@@ -186,7 +186,7 @@ if(Land >=-150){
     ctx.font = "15px Arial";
     text("Le Titanic c’est rendu au port",200,150);
   
-  cancelAnimationFrame(gameCode);
+  playGame = 0;
 }
 }
 }
