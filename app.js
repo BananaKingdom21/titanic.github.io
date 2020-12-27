@@ -10,9 +10,10 @@ button.onclick = function () {
 var supercoolcanvas = document.getElementById("myCanvas");
 var ctx = supercoolcanvas.getContext("2d");
 
-//titanic stuff
+//image stuff
 var boat = document.getElementById("boat");
 var water = document.getElementById("water");
+var icecube = document.getElementById("ice");
 
 //control mouvement titanic
 var boatX = 200;
@@ -38,6 +39,10 @@ y6:-1050, x6:240,
 var Land = -1800;
 var TitanicX = 200;
 
+//iceberg image stuff
+function icething (x, y, width, height) {
+  ctx.drawImage(icecube, x, y, width, height);
+}
 //circle code stuff
 function circle (x, y, size) {
   ctx.beginPath();
@@ -76,52 +81,25 @@ function gameCode () {
 ctx.drawImage(water, 0, 0, 800, 800);
 
 //Icebergs
-fill("rgb(0, 200, 200)");
-stroke("rgb(0,150,150)");
-strokeWeight(10);
 
 //Ice1
-circle(Ice.x1, Ice.y1, 60);
-
-circle(Ice.x1, Ice.y1 -20, 55);
-circle(Ice.x1, Ice.y1 +10, 65);
-circle(Ice.x1 -20, Ice.y1, 90);
-circle(Ice.x1 +30, Ice.y1, 90);
+icething(Ice.x1, Ice.y1, 100, 180);
 
 //Ice2
-circle(Ice.x2, Ice.y2,  70);
-
-circle(Ice.x2, Ice.y2 -20, 55);
-circle(Ice.x2, Ice.y2 +10, 55);
-circle(Ice.x2 -20, Ice.y2, 70);
-circle(Ice.x2 +20, Ice.y2 -10, 75);
+icething(Ice.x2, Ice.y2, 300, 210);
 
 //Ice3
-circle(Ice.x3, Ice.y3, 115);
-
-circle(Ice.x3 - 15, Ice.y3, 90);
-circle(Ice.x3 +20, Ice.y3, 85);
-
+icething(Ice.x3, Ice.y3, 550, 210);
+    
 //Ice4
-circle(Ice.x4, Ice.y4, 185);
-
-circle(Ice.x4 +30, Ice.y4, 100);
-circle(Ice.x4 +50, Ice.y4 -10, 75);
-circle(Ice.x4 -40, Ice.y4 -10, 100);
+icething(Ice.x4, Ice.y4, 550, 210);
 
 //Ice5
-circle(Ice.x5, Ice.y5, 185);
-    
-circle(Ice.x5 -60, Ice.y5 -10, 90);
-circle(Ice.x5 +80, Ice.y5 -10, 75);
+icething(Ice.x5, Ice.y5, 705, 210);
 
 //Ice6
-circle(Ice.x6, Ice.y6, 185);
-
-circle(Ice.x6 +60, Ice.y6 +10, 90);
-circle(Ice.x6 -80, Ice.y6 +10, 75);
-circle(Ice.x6, Ice.y6, 70);
-  
+icething(Ice.x6, Ice.y6, 570, 210);
+    
 //land
 
   
