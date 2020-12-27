@@ -28,22 +28,47 @@ boatMoveSide = 0;
 }
 
 //starting position stuff
+var wideIce = {
+ w1:400,
+ w2:600,
+ w3: 550,
+ w4: 550,
+ w5: 705,
+ w6: 570
+}
   var Ice = {
-y1:-400, x1:400,
-y2:-770, x2:170,
-y3:-900, x3:650,
-y4:-1300, x4:300,
-y5:-1700, x5:500,
-y6:-2100, x6:240,
+y1:-400, x1:400 + wideIce.w1 / 2,
+y2:-770, x2:170 + wideIce.w2 / 2,
+y3:-900, x3:650 + wideIce.w3 / 2,
+y4:-1300, x4:300 + wideIce.w4 / 2, 
+y5:-1700, x5:500 + wideIce.w5 / 2,
+y6:-2100, x6:240 + wideIce.w6 / 2
 };
 
 var Land = -1800;
 var TitanicX = 200;
 
-//iceberg image stuff
-function icething (x, y, width, height) {
+//icething code stuff
+function icething1 (x, y, width, height) {
   ctx.drawImage(icecube, x, y, width, height);
 }
+function icething2 (x, y, width, height) {
+  ctx.drawImage(icecube, x, y, width, height);
+}
+function icething3 (x, y, width, height) {
+  ctx.drawImage(icecube, x, y, width, height);
+}
+function icething4 (x, y, width, height) {
+  ctx.drawImage(icecube, x, y, width, height);
+}
+function icething5 (x, y, width, height) {
+  ctx.drawImage(icecube, x, y, width, height);
+}
+function icething6 (x, y, width, height) {
+  ctx.drawImage(icecube, x, y, width, height);
+}
+
+
 //circle code stuff
 function circle (x, y, size) {
   ctx.beginPath();
@@ -84,22 +109,22 @@ ctx.drawImage(water, 0, 0, 800, 800);
 //Icebergs
 
 //Ice1
-icething(Ice.x1, Ice.y1, 400, 140);
+icething1(Ice.x1, Ice.y1, wideIce.w1, 140);
 
 //Ice2
-icething(Ice.x2, Ice.y2, 600, 160);
+icething2(Ice.x2, Ice.y2, wideIce.w2, 160);
 
 //Ice3
-icething(Ice.x3, Ice.y3, 550, 180);
+icething3(Ice.x3, Ice.y3, wideIce.w3, 180);
     
 //Ice4
-icething(Ice.x4, Ice.y4, 550, 240);
+icething4(Ice.x4, Ice.y4, wideIce.w4, 240);
 
 //Ice5
-icething(Ice.x5, Ice.y5, 705, 220);
+icething5(Ice.x5, Ice.y5, wideIce.w5, 220);
 
 //Ice6
-icething(Ice.x6, Ice.y6, 570, 220);
+icething6(Ice.x6, Ice.y6, wideIce.w6, 220);
     
 //land
 
@@ -137,7 +162,7 @@ Land = Land + speed;
   
   if(boatX >=800){playGame = 0;}
       
-if(Ice.y1 +180 >=630 && Ice.y1 -180 <=500 && boatX +8 >=200 && boatX -8 <=600){playGame = 0;}
+if(Ice.y1 +180 >=630 && Ice.y1 -180 <=500 && boatX +8 >=200 && boatX -8 <=500){playGame = 0;}
     
 if(Ice.y2 +210 >=630 && Ice.y2 -210 <=500 && boatX +8 >=0 && boatX -8 <=300){playGame = 0;}
   
