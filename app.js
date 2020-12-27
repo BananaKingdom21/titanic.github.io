@@ -36,6 +36,7 @@ y4:-1300, x4:300,
 y5:-1700, x5:500,
 y6:-2100, x6:240,
 };
+
 var Land = -1800;
 var TitanicX = 200;
 
@@ -83,22 +84,22 @@ ctx.drawImage(water, 0, 0, 800, 800);
 //Icebergs
 
 //Ice1
-icething(Ice.x1, Ice.y1, 200, 460);
+icething(Ice.x1, Ice.y1, 400, 140);
 
 //Ice2
-icething(Ice.x2, Ice.y2, 600, 420);
+icething(Ice.x2, Ice.y2, 600, 160);
 
 //Ice3
-icething(Ice.x3, Ice.y3, 550, 420);
+icething(Ice.x3, Ice.y3, 550, 180);
     
 //Ice4
-icething(Ice.x4, Ice.y4, 550, 420);
+icething(Ice.x4, Ice.y4, 550, 240);
 
 //Ice5
-icething(Ice.x5, Ice.y5, 705, 420);
+icething(Ice.x5, Ice.y5, 705, 220);
 
 //Ice6
-icething(Ice.x6, Ice.y6, 570, 420);
+icething(Ice.x6, Ice.y6, 570, 220);
     
 //land
 
