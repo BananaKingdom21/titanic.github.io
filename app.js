@@ -178,7 +178,7 @@ if(Ice.y6 +105 >=315 && Ice.y6 -105 <=250 && boatX +4 >=0 && boatX -4 <=285 ){ca
 if(Land >=-150){
     stroke("rgb(82, 82, 82)");
     fill("rgb(120, 120, 120)");
-    rectangle(75,100,250,75);
+    rectangle(75,100,500,150);
   
     fill("rgb(0, 0, 0)");
     ctx.font = "30px Arial";
