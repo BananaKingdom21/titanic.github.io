@@ -19,7 +19,7 @@ var boatX = 200;
 var boatMoveSide = 0;
 var side = undefined;
 
-function boatMoveX (event) {
+function boatMove (event) {
 side = event.key;
 }
 function boatStop () {
