@@ -81,50 +81,50 @@ stroke("rgb(0,150,150)");
 strokeWeight(10);
 
 //Ice1
-circle(Ice.x1, Ice.y1, 200, 60);
+circle(Ice.x1, Ice.y1, 200, 30);
 
-circle(Ice.x1, Ice.y1 -20, 55);
-circle(Ice.x1, Ice.y1 +10, 65);
-circle(Ice.x1 -20, Ice.y1, 90);
-circle(Ice.x1 +30, Ice.y1, 90);
+circle(Ice.x1, Ice.y1 -20, 27.5);
+circle(Ice.x1, Ice.y1 +10, 32.5);
+circle(Ice.x1 -20, Ice.y1, 45);
+circle(Ice.x1 +30, Ice.y1, 45);
 
 //Ice2
-circle(Ice.x2, Ice.y2 , 140, 70);
+circle(Ice.x2, Ice.y2 , 140, 35);
 
-circle(Ice.x2, Ice.y2 -20, 55);
-circle(Ice.x2, Ice.y2 +10, 55);
-circle(Ice.x2 -20, Ice.y2, 70);
-circle(Ice.x2 +20, Ice.y2 -10, 75);
+circle(Ice.x2, Ice.y2 -20, 27.5);
+circle(Ice.x2, Ice.y2 +10, 27.5);
+circle(Ice.x2 -20, Ice.y2, 35);
+circle(Ice.x2 +20, Ice.y2 -10, 37.5);
 
 //Ice3
-circle(Ice.x3, Ice.y3, 115);
+circle(Ice.x3, Ice.y3, 57.5);
 
-circle(Ice.x3, Ice.y3, 90);
-circle(Ice.x3 +20, Ice.y3, 85);
+circle(Ice.x3, Ice.y3, 45);
+circle(Ice.x3 +20, Ice.y3, 42.5);
 
 //Ice4
-circle(Ice.x4, Ice.y4, 165);
+circle(Ice.x4, Ice.y4, 92.5);
 
-circle(Ice.x4, Ice.y4, 120);
-circle(Ice.x4 +30, Ice.y4, 100);
-circle(Ice.x4 +50, Ice.y4 -10, 75);
-circle(Ice.x4 -40, Ice.y4 -10, 100);
+circle(Ice.x4, Ice.y4, 60);
+circle(Ice.x4 +30, Ice.y4, 50);
+circle(Ice.x4 +50, Ice.y4 -10, 37.5);
+circle(Ice.x4 -40, Ice.y4 -10, 50);
 
 //Ice5
-circle(Ice.x5, Ice.y5, 185);
+circle(Ice.x5, Ice.y5, 92.5);
 
-circle(Ice.x5, Ice.y5, 130);
-circle(Ice.x5 -60, Ice.y5 -10, 90);
-circle(Ice.x5 +80, Ice.y5 -10, 75);
-circle(Ice.x5, Ice.y5, 70);
+circle(Ice.x5, Ice.y5, 65);
+circle(Ice.x5 -60, Ice.y5 -10, 45);
+circle(Ice.x5 +80, Ice.y5 -10, 37.5);
+circle(Ice.x5, Ice.y5, 35);
 
 //Ice6
-circle(Ice.x6, Ice.y6, 185);
+circle(Ice.x6, Ice.y6, 92.5);
 
-circle(Ice.x6, Ice.y6, 130);
-circle(Ice.x6 +60, Ice.y6 +10, 90);
-circle(Ice.x6 -80, Ice.y6 +10, 85);
-circle(Ice.x6, Ice.y6, 70);
+circle(Ice.x6, Ice.y6, 65);
+circle(Ice.x6 +60, Ice.y6 +10, 45);
+circle(Ice.x6 -80, Ice.y6 +10, 37.5);
+circle(Ice.x6, Ice.y6, 35);
   
 //land
 
@@ -147,10 +147,10 @@ Land = Land + speed;
         boatMoveSide = 2;
         }
     if (boatMoveSide === 1) {
-        boatX = boatX - 3;
+        boatX = boatX - 5;
         }
     if (boatMoveSide === 2) {
-        boatX = boatX + 3;
+        boatX = boatX + 5;
         }
     if (boatMoveSide === 0) {
         boatX = boatX - 0
