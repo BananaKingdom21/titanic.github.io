@@ -1,4 +1,3 @@
-
 var playGame = 0;
 
 var button = document.querySelector("button");
@@ -23,7 +22,7 @@ var side = undefined;
 function boatMoveX (event) {
 side = event.key;
 }
-function boatStopX () {
+function boatStop () {
 boatMoveSide = 0;
 }
 
