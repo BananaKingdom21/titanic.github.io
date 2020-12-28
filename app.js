@@ -1,10 +1,9 @@
 var playGame = 0;
+var reset = 0;
 
-var button = document.querySelector("button");
+//cool restet thing
 
-button.onclick = function () {
-  playGame = 1;
-}
+function reset () {
 
 //super cool canvas stuff
 var supercoolcanvas = document.getElementById("myCanvas");
@@ -75,7 +74,15 @@ function icething5 (x, y, width, height) {
 function icething6 (x, y, width, height) {
   ctx.drawImage(icecube, x, y, width, height);
 }
+}//end of reset function thing
 
+//button thing stuff
+var button = document.querySelector("button");
+
+button.onclick = function () {
+ reset();
+ playGame = 1;
+}
 
 //circle code stuff
 function circle (x, y, size) {
@@ -202,3 +209,4 @@ if(Land >=-150){
 }
 }
 requestAnimationFrame(gameCode);
+
