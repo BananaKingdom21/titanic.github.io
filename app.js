@@ -26,12 +26,6 @@ side = event.key;
 function boatStop () {
 boatMoveSide = 0;
 }
-//debuging and testing
-function mouseCoord (event) {
-  var xMouse = event.clientX;
-  var yMouse = event.clientY;
-  console.log("X " + xMouse + "Y " + yMouse);
-}
 
 //starting position stuff
 var wideIce = {
@@ -171,17 +165,17 @@ Land = Land + speed;
   
   if(boatX + 20 >=800){playGame = 0;}
       
-if(Ice.y1 +100 >=550 && Ice.y1 -100 <=550 && boatX +20 >=200 && boatX -20<=600){playGame = 0;}
+if(Ice.y1 +100 >=550 && Ice.y1 -100 <=550 && boatX +20 >=200 && boatX <=600){console.log("1");playGame = 0;}
     
-if(Ice.y2 +100 >=550 && Ice.y2 -100 <=550 && boatX +20 >=0 && boatX  -20<=300){playGame = 0;}
+if(Ice.y2 +100 >=550 && Ice.y2 -100 <=550 && boatX +20 >=0 && boatX <=300){console.log("2");playGame = 0;}
   
-if(Ice.y3 +100 >=550 && Ice.y3 -100 <=550 && boatX +20 >=500 && boatX -20<=800){playGame = 0;}
+if(Ice.y3 +100 >=550 && Ice.y3 -100 <=550 && boatX +20 >=500 && boatX <=800){console.log("3");playGame = 0;}
 
-if(Ice.y4 +100 >=550 && Ice.y4 -100 <=550 && boatX +20 >=0 && boatX -20<=550){playGame = 0;}
+if(Ice.y4 +100 >=550 && Ice.y4 -100 <=550 && boatX +20 >=0 && boatX <=550){console.log("4");playGame = 0;}
     
-if(Ice.y5 +100 >=550 && Ice.y5 -100 <=550 && boatX +20 >=190 && boatX -20<=800){playGame = 0;}
+if(Ice.y5 +100 >=550 && Ice.y5 -100 <=550 && boatX +20 >=190 && boatX <=800){console.log("5");playGame = 0;}
     
-if(Ice.y6 +100 >=550 && Ice.y6 -100 <=550 && boatX +20 >=0 && boatX -20<=570 ){playGame = 0;}
+if(Ice.y6 +100 >=550 && Ice.y6 -100 <=550 && boatX +20 >=0 && boatX <=570 ){console.log("6");playGame = 0;}
 
 //Hit Land
 if(Land >=-150){
