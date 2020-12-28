@@ -155,7 +155,7 @@ Land = Land + speed;
     if (boatMoveSide === 0) {
         boatX = boatX - 0
         }
-    ctx.drawImage(boat, boatX - 30, 550, 60, 160);
+    ctx.drawImage(boat, boatX - 100, 550, 500, 500);
 
 //Detect Collision
   if(boatX <=0){playGame = 0;}
