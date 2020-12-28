@@ -29,12 +29,12 @@ boatMoveSide = 0;
 
 //starting position stuff
 var wideIce = {
- w1:400 *6,
- w2:280 *6,
- w3:320 *6,
- w4:520 *6,
- w5:600 *6,
- w6:600 *6,
+ w1:400 *4,
+ w2:280 *4,
+ w3:320 *4,
+ w4:520 *4,
+ w5:600 *4,
+ w6:600 *4,
 }
   var Ice = {
 y1:-400, x1:400 - wideIce.w1 / 2,
@@ -109,22 +109,22 @@ ctx.drawImage(water, 0, 0, 800, 800);
 //Icebergs
 
 //Ice1
-icething1(Ice.x1, Ice.y1, wideIce.w1, 120 *2);
+icething1(Ice.x1, Ice.y1, wideIce.w1, 120 *4);
 
 //Ice2
-icething2(Ice.x2, Ice.y2, wideIce.w2, 160 *2);
+icething2(Ice.x2, Ice.y2, wideIce.w2, 160 *4);
 
 //Ice3
-icething3(Ice.x3, Ice.y3, wideIce.w3, 180 *2);
+icething3(Ice.x3, Ice.y3, wideIce.w3, 180 *4);
     
 //Ice4
-icething4(Ice.x4, Ice.y4, wideIce.w4, 240 *2);
+icething4(Ice.x4, Ice.y4, wideIce.w4, 240 *4);
 
 //Ice5
-icething5(Ice.x5, Ice.y5, wideIce.w5, 220 *2);
+icething5(Ice.x5, Ice.y5, wideIce.w5, 220 *4);
 
 //Ice6
-icething6(Ice.x6, Ice.y6, wideIce.w6, 220 *2);
+icething6(Ice.x6, Ice.y6, wideIce.w6, 220 *4);
     
 //land
 
@@ -155,7 +155,7 @@ Land = Land + speed;
     if (boatMoveSide === 0) {
         boatX = boatX - 0
         }
-    ctx.drawImage(boat, boatX - 100, 400, 500, 500);
+    ctx.drawImage(boat, boatX - 100, 400, 500, 400);
     
     fill("rgb(0, 150, 50)");
     circle(boatX, 400, 5);
