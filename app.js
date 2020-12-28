@@ -1,5 +1,5 @@
+//cool playGame variable
 var playGame = 0;
-var reset = 0;
 
 //cool restet thing
 
@@ -77,9 +77,14 @@ function icething6 (x, y, width, height) {
 }//end of reset function thing
 
 //button thing stuff
-var button = document.querySelector("button");
+var startButton = document.getElementById("startButton");
+var resetButton = document.getElementById("resetButton");
 
-button.onclick = function () {
+startButton.onclick = function () {
+ reset();
+ playGame = 1;
+}
+resetButton.onclick = function () {
  reset();
  playGame = 1;
 }
