@@ -26,6 +26,13 @@ side = event.key;
 function boatStop () {
 boatMoveSide = 0;
 }
+//debuging and testing
+function mouseCoord (event) {
+  var xMouse = event.clientX;
+  var yMouse = event.clientY;
+  console.log("X " + xMouse);
+  console.log("X " + yMouse);
+}
 
 //starting position stuff
 var wideIce = {
