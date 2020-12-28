@@ -171,17 +171,17 @@ Land = Land + speed;
   
   if(boatX + 60 >=800){playGame = 0;}
       
-if(Ice.y1 +180 >=600 && Ice.y1 -180 <=500 && boatX +60 >=200 && boatX <=600){playGame = 0;}
+if(Ice.y1 +180 >=550 && Ice.y1 -180 <=500 && boatX +60 >=200 && boatX <=600){playGame = 0;}
     
-if(Ice.y2 +210 >=600 && Ice.y2 -210 <=500 && boatX +60 >=0 && boatX <=300){playGame = 0;}
+if(Ice.y2 +210 >=550 && Ice.y2 -210 <=500 && boatX +60 >=0 && boatX <=300){playGame = 0;}
   
-if(Ice.y3 +210 >=600 && Ice.y3 -210 <=500 && boatX +60 >=500 && boatX <=800){playGame = 0;}
+if(Ice.y3 +210 >=550 && Ice.y3 -210 <=500 && boatX +60 >=500 && boatX <=800){playGame = 0;}
 
-if(Ice.y4 +210 >=600 && Ice.y4 -210 <=500 && boatX +60 >=0 && boatX <=550){playGame = 0;}
+if(Ice.y4 +210 >=550 && Ice.y4 -210 <=500 && boatX +60 >=0 && boatX <=550){playGame = 0;}
     
-if(Ice.y5 +210 >=600 && Ice.y5 -210 <=500 && boatX +60 >=190 && boatX <=800){playGame = 0;}
+if(Ice.y5 +210 >=550 && Ice.y5 -210 <=500 && boatX +60 >=190 && boatX <=800){playGame = 0;}
     
-if(Ice.y6 +210 >=600 && Ice.y6 -210 <=500 && boatX +60 >=0 && boatX <=570 ){playGame = 0;}
+if(Ice.y6 +210 >=550 && Ice.y6 -210 <=500 && boatX +60 >=0 && boatX <=570 ){playGame = 0;}
 
 //Hit Land
 if(Land >=-150){
