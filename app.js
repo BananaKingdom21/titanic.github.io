@@ -36,13 +36,21 @@ var wideIce = {
  w5:600 *3,
  w6:600 *3,
 }
+var tallIce = {
+ t1:420,
+ t2:560,
+ t3:630,
+ t4:840,
+ t5:770,
+ t6:770,
+}
   var Ice = {
-y1:-400, x1:400 - wideIce.w1 / 2,
-y2:-770, x2:170 - wideIce.w2 / 2,
-y3:-900, x3:650 - wideIce.w3 / 2,
-y4:-1300, x4:300 - wideIce.w4 / 2, 
-y5:-1700, x5:500 - wideIce.w5 / 2,
-y6:-2100, x6:240 - wideIce.w6 / 2
+   y1:-400 - tallIce.t1 / 2, x1:400 - wideIce.w1 / 2,
+   y2:-770 - tallIce.t2 / 2, x2:170 - wideIce.w2 / 2,
+   y3:-900 - tallIce.t3 / 2, x3:650 - wideIce.w3 / 2,
+   y4:-1300 - tallIce.t4 / 2, x4:300 - wideIce.w4 / 2, 
+   y5:-1700 - tallIce.t5 / 2, x5:500 - wideIce.w5 / 2,
+   y6:-2100 - tallIce.t6 / 2, x6:240 - wideIce.w6 / 2
 };
 
 var Land = -1800;
@@ -109,22 +117,22 @@ ctx.drawImage(water, 0, 0, 800, 800);
 //Icebergs
 
 //Ice1
-icething1(Ice.x1, Ice.y1, wideIce.w1, 120 *3.5);
+icething1(Ice.x1, Ice.y1, wideIce.w1, tallIce.t1);
 
 //Ice2
-icething2(Ice.x2, Ice.y2, wideIce.w2, 160 *3.5);
+icething2(Ice.x2, Ice.y2, wideIce.w2, tallIce.t2);
 
 //Ice3
-icething3(Ice.x3, Ice.y3, wideIce.w3, 180 *3.5);
+icething3(Ice.x3, Ice.y3, wideIce.w3, tallIce.t3);
     
 //Ice4
-icething4(Ice.x4, Ice.y4, wideIce.w4, 240 *3.5);
+icething4(Ice.x4, Ice.y4, wideIce.w4, tallIce.t4);
 
 //Ice5
-icething5(Ice.x5, Ice.y5, wideIce.w5, 220 *3.5);
+icething5(Ice.x5, Ice.y5, wideIce.w5, tallIce.t5);
 
 //Ice6
-icething6(Ice.x6, Ice.y6, wideIce.w6, 220 *3.5);
+icething6(Ice.x6, Ice.y6, wideIce.w6, tallIce.t6);
     
 //land
 
