@@ -161,27 +161,27 @@ Land = Land + speed;
     if (boatMoveSide === 0) {
         boatX = boatX - 0
         }
-    ctx.drawImage(boat, boatX - 200, 400, 500, 400);
+    ctx.drawImage(boat, boatX - 250, 400, 500, 400);
     
     fill("rgb(0, 150, 50)");
     circle(boatX, 400, 5);
 
 //Detect Collision
-  if(boatX <=0){playGame = 0;}
+  if(boatX - 20 <=0){playGame = 0;}
   
-  if(boatX + 60 >=800){playGame = 0;}
+  if(boatX + 20 >=800){playGame = 0;}
       
-if(Ice.y1 +180 >=550 && Ice.y1 -180 <=500 && boatX +60 >=200 && boatX <=600){playGame = 0;}
+if(Ice.y1 +100 >=550 && Ice.y1 -100 <=550 && boatX +20 >=200 && boatX -20<=600){playGame = 0;}
     
-if(Ice.y2 +210 >=550 && Ice.y2 -210 <=500 && boatX +60 >=0 && boatX <=300){playGame = 0;}
+if(Ice.y2 +100 >=550 && Ice.y2 -100 <=550 && boatX +20 >=0 && boatX  -20<=300){playGame = 0;}
   
-if(Ice.y3 +210 >=550 && Ice.y3 -210 <=500 && boatX +60 >=500 && boatX <=800){playGame = 0;}
+if(Ice.y3 +100 >=550 && Ice.y3 -100 <=550 && boatX +20 >=500 && boatX -20<=800){playGame = 0;}
 
-if(Ice.y4 +210 >=550 && Ice.y4 -210 <=500 && boatX +60 >=0 && boatX <=550){playGame = 0;}
+if(Ice.y4 +100 >=550 && Ice.y4 -100 <=550 && boatX +20 >=0 && boatX -20<=550){playGame = 0;}
     
-if(Ice.y5 +210 >=550 && Ice.y5 -210 <=500 && boatX +60 >=190 && boatX <=800){playGame = 0;}
+if(Ice.y5 +100 >=550 && Ice.y5 -100 <=550 && boatX +20 >=190 && boatX -20<=800){playGame = 0;}
     
-if(Ice.y6 +210 >=550 && Ice.y6 -210 <=500 && boatX +60 >=0 && boatX <=570 ){playGame = 0;}
+if(Ice.y6 +100 >=550 && Ice.y6 -100 <=550 && boatX +20 >=0 && boatX -20<=570 ){playGame = 0;}
 
 //Hit Land
 if(Land >=-150){
