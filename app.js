@@ -29,10 +29,10 @@ boatMoveSide = 0;
 
 //starting position stuff
 var wideIce = {
- w1:400 *3,
+ w1:400 *2,
  w2:280 *3,
  w3:320 *3,
- w4:520 *3,
+ w4:520 *2,
  w5:600 *3,
  w6:600 *3,
 }
@@ -109,22 +109,22 @@ ctx.drawImage(water, 0, 0, 800, 800);
 //Icebergs
 
 //Ice1
-icething1(Ice.x1, Ice.y1, wideIce.w1, 120 *4);
+icething1(Ice.x1, Ice.y1, wideIce.w1, 120 *3.5);
 
 //Ice2
-icething2(Ice.x2, Ice.y2, wideIce.w2, 160 *4);
+icething2(Ice.x2, Ice.y2, wideIce.w2, 160 *3.5);
 
 //Ice3
-icething3(Ice.x3, Ice.y3, wideIce.w3, 180 *3);
+icething3(Ice.x3, Ice.y3, wideIce.w3, 180 *3.5);
     
 //Ice4
-icething4(Ice.x4, Ice.y4, wideIce.w4, 240 *3);
+icething4(Ice.x4, Ice.y4, wideIce.w4, 240 *3.5);
 
 //Ice5
-icething5(Ice.x5, Ice.y5, wideIce.w5, 220 *3);
+icething5(Ice.x5, Ice.y5, wideIce.w5, 220 *3.5);
 
 //Ice6
-icething6(Ice.x6, Ice.y6, wideIce.w6, 220 *3);
+icething6(Ice.x6, Ice.y6, wideIce.w6, 220 *3.5);
     
 //land
 
@@ -165,17 +165,17 @@ Land = Land + speed;
   
   if(boatX + 60 >=800){playGame = 0;}
       
-if(Ice.y1 +180 >=630 && Ice.y1 -180 <=500 && boatX +60 >=200 && boatX <=600){playGame = 0;}
+if(Ice.y1 +180 >=600 && Ice.y1 -180 <=500 && boatX +60 >=200 && boatX <=600){playGame = 0;}
     
-if(Ice.y2 +210 >=630 && Ice.y2 -210 <=500 && boatX +60 >=0 && boatX <=300){playGame = 0;}
+if(Ice.y2 +210 >=600 && Ice.y2 -210 <=500 && boatX +60 >=0 && boatX <=300){playGame = 0;}
   
-if(Ice.y3 +210 >=630 && Ice.y3 -210 <=500 && boatX +60 >=500 && boatX <=800){playGame = 0;}
+if(Ice.y3 +210 >=600 && Ice.y3 -210 <=500 && boatX +60 >=500 && boatX <=800){playGame = 0;}
 
-if(Ice.y4 +210 >=630 && Ice.y4 -210 <=500 && boatX +60 >=0 && boatX <=550){playGame = 0;}
+if(Ice.y4 +210 >=600 && Ice.y4 -210 <=500 && boatX +60 >=0 && boatX <=550){playGame = 0;}
     
-if(Ice.y5 +210 >=630 && Ice.y5 -210 <=500 && boatX +60 >=190 && boatX <=800){playGame = 0;}
+if(Ice.y5 +210 >=600 && Ice.y5 -210 <=500 && boatX +60 >=190 && boatX <=800){playGame = 0;}
     
-if(Ice.y6 +210 >=630 && Ice.y6 -210 <=500 && boatX +60 >=0 && boatX <=570 ){playGame = 0;}
+if(Ice.y6 +210 >=600 && Ice.y6 -210 <=500 && boatX +60 >=0 && boatX <=570 ){playGame = 0;}
 
 //Hit Land
 if(Land >=-150){
