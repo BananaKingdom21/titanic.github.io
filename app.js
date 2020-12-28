@@ -29,12 +29,12 @@ boatMoveSide = 0;
 
 //starting position stuff
 var wideIce = {
- w1:400 *2,
- w2:280 *2,
- w3:320 *2,
- w4:520 *2,
- w5:600 *2,
- w6:600 *2,
+ w1:400 *8,
+ w2:280 *8,
+ w3:320 *8,
+ w4:520 *8,
+ w5:600 *8,
+ w6:600 *8,
 }
   var Ice = {
 y1:-400, x1:400 - wideIce.w1 / 2,
@@ -109,22 +109,22 @@ ctx.drawImage(water, 0, 0, 800, 800);
 //Icebergs
 
 //Ice1
-icething1(Ice.x1, Ice.y1, wideIce.w1, 120);
+icething1(Ice.x1, Ice.y1, wideIce.w1, 120 *2);
 
 //Ice2
-icething2(Ice.x2, Ice.y2, wideIce.w2, 160);
+icething2(Ice.x2, Ice.y2, wideIce.w2, 160 *2);
 
 //Ice3
-icething3(Ice.x3, Ice.y3, wideIce.w3, 180);
+icething3(Ice.x3, Ice.y3, wideIce.w3, 180 *2);
     
 //Ice4
-icething4(Ice.x4, Ice.y4, wideIce.w4, 240);
+icething4(Ice.x4, Ice.y4, wideIce.w4, 240 *2);
 
 //Ice5
-icething5(Ice.x5, Ice.y5, wideIce.w5, 220);
+icething5(Ice.x5, Ice.y5, wideIce.w5, 220 *2);
 
 //Ice6
-icething6(Ice.x6, Ice.y6, wideIce.w6, 220);
+icething6(Ice.x6, Ice.y6, wideIce.w6, 220 *2);
     
 //land
 
