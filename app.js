@@ -29,12 +29,12 @@ boatMoveSide = 0;
 
 //starting position stuff
 var wideIce = {
- w1:400 *8,
- w2:280 *8,
- w3:320 *8,
- w4:520 *8,
- w5:600 *8,
- w6:600 *8,
+ w1:400 *6,
+ w2:280 *6,
+ w3:320 *6,
+ w4:520 *6,
+ w5:600 *6,
+ w6:600 *6,
 }
   var Ice = {
 y1:-400, x1:400 - wideIce.w1 / 2,
@@ -155,7 +155,7 @@ Land = Land + speed;
     if (boatMoveSide === 0) {
         boatX = boatX - 0
         }
-    ctx.drawImage(boat, boatX - 100, 550, 500, 500);
+    ctx.drawImage(boat, boatX - 100, 400, 500, 500);
 
 //Detect Collision
   if(boatX <=0){playGame = 0;}
