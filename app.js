@@ -30,8 +30,7 @@ boatMoveSide = 0;
 function mouseCoord (event) {
   var xMouse = event.clientX;
   var yMouse = event.clientY;
-  console.log("X " + xMouse);
-  console.log("X " + yMouse);
+  console.log("X " + xMouse + "Y " + yMouse);
 }
 
 //starting position stuff
