@@ -159,7 +159,7 @@ icething3(Ice.x3, Ice.y3 -300, wideIce.w3, tallIce.t3);
 icething4(Ice.x4, Ice.y4 -300, wideIce.w4, tallIce.t4);
 
 //Ice5
-icething5(Ice.x5, Ice.y5 -300, wideIce.w5, tallIce.t5);
+icething5(Ice.x5 +200, Ice.y5 -300, wideIce.w5, tallIce.t5);
 
 //Ice6
 icething6(Ice.x6, Ice.y6 -300, wideIce.w6, tallIce.t6);
