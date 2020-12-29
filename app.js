@@ -212,9 +212,9 @@ if(Ice.y3 +100 >=550 && Ice.y3 -100 <=500 && boatX +20 >=500 && boatX <=800){con
 
 if(Ice.y4 +100 >=550 && Ice.y4 -100 <=500 && boatX +20 >=0 && boatX <=550){console.log("4");playGame = 0;}
     
-if(Ice.y5 +100 >=550 && Ice.y5 -100 <=500 && boatX +20 >=190 && boatX <=800){console.log("5");playGame = 0;}
+if(Ice.y5 +100 >=550 && Ice.y5 -100 <=500 && boatX +20 >=300 && boatX <=800){console.log("5");playGame = 0;}
     
-if(Ice.y6 +100 >=550 && Ice.y6 -100 <=500 && boatX +20 >=0 && boatX <=570 ){console.log("6");playGame = 0;}
+if(Ice.y6 +100 >=550 && Ice.y6 -100 <=500 && boatX +20 >=0 && boatX <=500 ){console.log("6");playGame = 0;}
 
 //Hit Land
 if(Land >=-150){
