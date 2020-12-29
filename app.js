@@ -150,19 +150,19 @@ ctx.drawImage(water, 0, 0, 800, 800);
 icething1(Ice.x1, Ice.y1 -100, wideIce.w1, tallIce.t1);
 
 //Ice2
-icething2(Ice.x2, Ice.y2 -100, wideIce.w2, tallIce.t2);
+icething2(Ice.x2, Ice.y2 -200, wideIce.w2, tallIce.t2);
 
 //Ice3
-icething3(Ice.x3, Ice.y3 -100, wideIce.w3, tallIce.t3);
+icething3(Ice.x3, Ice.y3 -200, wideIce.w3, tallIce.t3);
     
 //Ice4
-icething4(Ice.x4, Ice.y4 -100, wideIce.w4, tallIce.t4);
+icething4(Ice.x4, Ice.y4 -200, wideIce.w4, tallIce.t4);
 
 //Ice5
-icething5(Ice.x5, Ice.y5 -100, wideIce.w5, tallIce.t5);
+icething5(Ice.x5, Ice.y5 -200, wideIce.w5, tallIce.t5);
 
 //Ice6
-icething6(Ice.x6, Ice.y6 -100, wideIce.w6, tallIce.t6);
+icething6(Ice.x6, Ice.y6 -200, wideIce.w6, tallIce.t6);
     
 //land
 ctx.drawImage(earth, 0, Land - 250, 800, 250);
