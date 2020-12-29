@@ -36,7 +36,7 @@ var wideIce = {
  w2:280 *2,
  w3:320 *2,
  w4:520 *2,
- w5:600 *2,
+ w5:600 *1.5,
  w6:600 *2,
 }
 var tallIce = {
@@ -212,7 +212,7 @@ if(Ice.y3 +100 >=550 && Ice.y3 -100 <=500 && boatX +20 >=500 && boatX <=800){con
 
 if(Ice.y4 +100 >=550 && Ice.y4 -100 <=500 && boatX +20 >=0 && boatX <=550){console.log("4");playGame = 0;}
     
-if(Ice.y5 +100 >=550 && Ice.y5 -100 <=500 && boatX +20 >=300 && boatX <=800){console.log("5");playGame = 0;}
+if(Ice.y5 +100 >=550 && Ice.y5 -100 <=500 && boatX +20 >=400 && boatX <=800){console.log("5");playGame = 0;}
     
 if(Ice.y6 +100 >=550 && Ice.y6 -100 <=500 && boatX +20 >=0 && boatX <=500 ){console.log("6");playGame = 0;}
 
