@@ -193,7 +193,7 @@ Land = Land + speed;
     if (boatMoveSide === 0) {
         boatX = boatX - 0
         }
-    ctx.drawImage(boat, boatX - 250, 400, 500, 400);
+    ctx.drawImage(boat, boatX - 225, 400, 500, 400);
     
    //cool dev circle thing
     fill("rgb(0, 150, 50)");
