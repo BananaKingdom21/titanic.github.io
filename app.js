@@ -55,7 +55,7 @@ var tallIce = {
    y5:-1700 - tallIce.t5 / 2, x5:500 - wideIce.w5 / 2,
    y6:-2100 - tallIce.t6 / 2, x6:240 - wideIce.w6 / 2
 };
-var Land = -3600;
+var Land = -2000;
 
 //icething code stuff
 function icething1 (x, y, width, height) {
@@ -226,7 +226,7 @@ if(Land >=-150){
     ctx.font = "30px Arial";
     text("New-York",350,150);
     ctx.font = "15px Arial";
-    text("Le Titanic c’est rendu au port",300,180);
+    text("Le Titanic c’est rendu au port",310,180);
   
   playGame = 0;
 }
