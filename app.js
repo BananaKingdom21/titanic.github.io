@@ -33,15 +33,15 @@ boatMoveSide = 0;
 //starting position stuff
 var wideIce = {
  w1:400 *2,
- w2:280 *3,
- w3:320 *3,
+ w2:280,
+ w3:320 *2,
  w4:520 *2,
  w5:600 *3,
  w6:600 *3,
 }
 var tallIce = {
  t1:420,
- t2:560,
+ t2:560 / 3,
  t3:630,
  t4:840,
  t5:770,
