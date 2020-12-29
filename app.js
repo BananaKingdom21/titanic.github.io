@@ -48,8 +48,8 @@ var tallIce = {
  t6:770,
 }
   var Ice = {
-   y1:-450 - tallIce.t1 / 2, x1:400 - wideIce.w1 / 2,
-   y2:-870 - tallIce.t2 / 2, x2:170 - wideIce.w2 / 2,
+   y1:-400 - tallIce.t1 / 2, x1:400 - wideIce.w1 / 2,
+   y2:-770 - tallIce.t2 / 2, x2:170 - wideIce.w2 / 2,
    y3:-900 - tallIce.t3 / 2, x3:650 - wideIce.w3 / 2,
    y4:-1300 - tallIce.t4 / 2, x4:300 - wideIce.w4 / 2, 
    y5:-1700 - tallIce.t5 / 2, x5:500 - wideIce.w5 / 2,
@@ -147,10 +147,10 @@ ctx.drawImage(water, 0, 0, 800, 800);
 //Icebergs
 
 //Ice1
-icething1(Ice.x1, Ice.y1, wideIce.w1, tallIce.t1);
+icething1(Ice.x1, Ice.y1 + 50, wideIce.w1, tallIce.t1);
 
 //Ice2
-icething2(Ice.x2, Ice.y2, wideIce.w2, tallIce.t2);
+icething2(Ice.x2, Ice.y2 + 100, wideIce.w2, tallIce.t2);
 
 //Ice3
 icething3(Ice.x3, Ice.y3, wideIce.w3, tallIce.t3);
