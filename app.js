@@ -19,7 +19,7 @@ var icecube = document.getElementById("ice");
 var earth = document.getElementById("land");
 
 //control mouvement titanic
-var boatX = 200;
+var boatX = 400;
 var boatMoveSide = 0;
 var side = undefined;
 
