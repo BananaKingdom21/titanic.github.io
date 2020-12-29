@@ -220,7 +220,7 @@ if(Ice.y6 +100 >=550 && Ice.y6 -100 <=500 && boatX +20 >=0 && boatX <=570 ){cons
 if(Land >=-150){
     stroke("rgb(82, 82, 82)");
     fill("rgb(120, 120, 120)");
-    rectangle(75,100,500,150);
+    rectangle(75,100,400,150);
   
     fill("rgb(0, 0, 0)");
     ctx.font = "30px Arial";
