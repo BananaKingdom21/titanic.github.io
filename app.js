@@ -16,6 +16,7 @@ var ctx = supercoolcanvas.getContext("2d");
 var boat = document.getElementById("boat");
 var water = document.getElementById("water");
 var icecube = document.getElementById("ice");
+var earth = document.getElementById("land");
 
 //control mouvement titanic
 var boatX = 200;
@@ -164,7 +165,7 @@ icething5(Ice.x5, Ice.y5, wideIce.w5, tallIce.t5);
 icething6(Ice.x6, Ice.y6, wideIce.w6, tallIce.t6);
     
 //land
-
+ctx.drawImage(earth, 0, Land - 250, 800, 250);
   
 //speed
 var speed = 5;
