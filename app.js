@@ -212,9 +212,9 @@ if(Ice.y3 +100 >=550 && Ice.y3 -100 <=500 && boatX +20 >=500 && boatX <=800){con
 
 if(Ice.y4 +100 >=550 && Ice.y4 -100 <=500 && boatX +20 >=0 && boatX <=550){console.log("4");playGame = 0;}
     
-if(Ice.y5 +100 >=550 && Ice.y5 -100 <=500 && boatX +20 >=400 && boatX <=800){console.log("5");playGame = 0;}
+if(Ice.y5 +100 >=550 && Ice.y5 -100 <=500 && boatX +20 >=450 && boatX <=800){console.log("5");playGame = 0;}
     
-if(Ice.y6 +100 >=550 && Ice.y6 -100 <=500 && boatX +20 >=0 && boatX <=500 ){console.log("6");playGame = 0;}
+if(Ice.y6 +100 >=550 && Ice.y6 -100 <=500 && boatX +20 >=0 && boatX <=450 ){console.log("6");playGame = 0;}
 
 //Hit Land
 if(Land >=-150){
@@ -224,9 +224,9 @@ if(Land >=-150){
   
     fill("rgb(0, 0, 0)");
     ctx.font = "30px Arial";
-    text("New-York",350,120);
+    text("New-York",350,150);
     ctx.font = "15px Arial";
-    text("Le Titanic c’est rendu au port",300,150);
+    text("Le Titanic c’est rendu au port",300,180);
   
   playGame = 0;
 }
