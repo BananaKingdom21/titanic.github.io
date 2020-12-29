@@ -1,9 +1,12 @@
 //cool playGame variable
-var playGame = 0;
+var playGame = 0
 
-//cool restet thing
+//button thing stuff
+var startButton = document.getElementById("startButton");
+var resetButton = document.getElementById("resetButton");
 
-function reset () {
+startButton.onclick = function () {playGame = 1;}
+resetButton.onclick = function () {reset(); playGame = 1;}
 
 //super cool canvas stuff
 var supercoolcanvas = document.getElementById("myCanvas");
@@ -51,9 +54,7 @@ var tallIce = {
    y5:-1700 - tallIce.t5 / 2, x5:500 - wideIce.w5 / 2,
    y6:-2100 - tallIce.t6 / 2, x6:240 - wideIce.w6 / 2
 };
-
 var Land = -1800;
-var TitanicX = 200;
 
 //icething code stuff
 function icething1 (x, y, width, height) {
@@ -74,21 +75,37 @@ function icething5 (x, y, width, height) {
 function icething6 (x, y, width, height) {
   ctx.drawImage(icecube, x, y, width, height);
 }
-}//end of reset function thing
-
-//button thing stuff
-var startButton = document.getElementById("startButton");
-var resetButton = document.getElementById("resetButton");
-
-startButton.onclick = function () {
- reset();
- playGame = 1;
+//reset thing 
+function reset () {
+ boatX = 200;
+ boatMoveSide = 0;
+ side = undefined;
+ wideIce.w1 = 400 *2;
+ wideIce.w2 = 280 *3;
+ wideIce.w3 = 320 *3;
+ wideIce.w4 = 520 *2;
+ wideIce.w5 = 600 *3;
+ wideIce.w6 = 600 *3;
+ tallIce.t1 = 420;
+ tallIce.t2 = 560;
+ tallIce.t3 = 630;
+ tallIce.t4 = 840;
+ tallIce.t5 = 770;
+ tallIce.t6 = 770;
+ Ice.y1 = -400 - tallIce.t1 / 2;
+ Ice.x1 = 400 - wideIce.w1 / 2;
+ Ice.y2 = -770 - tallIce.t2 / 2;
+ Ice.x2 = 170 - wideIce.w2 / 2;
+ Ice.y3 = -900 - tallIce.t3 / 2;
+ Ice.x3 = 650 - wideIce.w3 / 2;
+ Ice.y4 = -1300 - tallIce.t4 / 2;
+ Ice.x4 = 300 - wideIce.w4 / 2;
+ Ice.y5 = -1700 - tallIce.t5 / 2;
+ Ice.x5 = 500 - wideIce.w5 / 2;
+ Ice.y6 = -2100 - tallIce.t6 / 2;
+ Ice.x6 = 240 - wideIce.w6 / 2;
+ Land = -1800;
 }
-resetButton.onclick = function () {
- reset();
- playGame = 1;
-}
-
 //circle code stuff
 function circle (x, y, size) {
   ctx.beginPath();
@@ -177,10 +194,11 @@ Land = Land + speed;
         }
     ctx.drawImage(boat, boatX - 250, 400, 500, 400);
     
+   //cool dev circle thing
     fill("rgb(0, 150, 50)");
     circle(boatX, 400, 5);
 
-//Detect Collision
+//detect collision stuff
   if(boatX - 20 <=0){playGame = 0;}
   
   if(boatX + 20 >=800){playGame = 0;}
