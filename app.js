@@ -48,8 +48,8 @@ var tallIce = {
  t6:770,
 }
   var Ice = {
-   y1:-400 - tallIce.t1 / 2, x1:400 - wideIce.w1 / 2,
-   y2:-770 - tallIce.t2 / 2, x2:170 - wideIce.w2 / 2,
+   y1:-450 - tallIce.t1 / 2, x1:400 - wideIce.w1 / 2,
+   y2:-870 - tallIce.t2 / 2, x2:170 - wideIce.w2 / 2,
    y3:-900 - tallIce.t3 / 2, x3:650 - wideIce.w3 / 2,
    y4:-1300 - tallIce.t4 / 2, x4:300 - wideIce.w4 / 2, 
    y5:-1700 - tallIce.t5 / 2, x5:500 - wideIce.w5 / 2,
