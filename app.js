@@ -36,16 +36,16 @@ var wideIce = {
  w2:280 *2,
  w3:320 *2,
  w4:520 *2,
- w5:600 *3,
- w6:600 *3,
+ w5:600 *2,
+ w6:600 *2,
 }
 var tallIce = {
  t1:420,
  t2:560,
  t3:630,
- t4:840 /2,
- t5:770 /2,
- t6:770 /2,
+ t4:840 /1.5,
+ t5:770 /1.5,
+ t6:770 /1.5,
 }
   var Ice = {
    y1:-400 - tallIce.t1 / 2, x1:400 - wideIce.w1 / 2,
@@ -142,7 +142,7 @@ function gameCode () {
   if (playGame === 1) {
 
 //background
-ctx.drawImage(water, 0, 0, 800, 800);
+ctx.drawImage(water, 0, 0, 800, 750);
 
 //Icebergs
 
