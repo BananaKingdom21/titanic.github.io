@@ -159,7 +159,7 @@ icething1(Ice.x1, Ice.y1 -100, wideIce.w1, tallIce.t1);
 icething2(Ice.x2, Ice.y2 -200, wideIce.w2, tallIce.t2);
 
 //Ice3
-icething3(Ice.x3, Ice.y3 -300, wideIce.w3, tallIce.t3);
+icething3(Ice.x3 +50, Ice.y3 -300, wideIce.w3, tallIce.t3);
     
 //Ice4
 icething4(Ice.x4 - 20, Ice.y4 -300, wideIce.w4, tallIce.t4);
@@ -171,7 +171,7 @@ icething5(Ice.x5 +175, Ice.y5 -300, wideIce.w5, tallIce.t5);
 icething6(Ice.x6, Ice.y6 -300, wideIce.w6, tallIce.t6);
     
 //land
-ctx.drawImage(earth, 0, Land + 175, 800, 500);
+ctx.drawImage(earth, 0, Land + 165, 800, 550);
   
 //speed
 var speed = 5;
