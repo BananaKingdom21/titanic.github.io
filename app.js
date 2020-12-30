@@ -55,7 +55,7 @@ var tallIce = {
    y5:-1700 - tallIce.t5 / 2, x5:500 - wideIce.w5 / 2,
    y6:-2100 - tallIce.t6 / 2, x6:240 - wideIce.w6 / 2
 };
-var Land = -2000;
+var Land = -2500;
 
 //icething code stuff
 function icething1 (x, y, width, height) {
@@ -165,7 +165,9 @@ icething5(Ice.x5 +200, Ice.y5 -300, wideIce.w5, tallIce.t5);
 icething6(Ice.x6, Ice.y6 -300, wideIce.w6, tallIce.t6);
     
 //land
-ctx.drawImage(earth, 0, Land - 250, 800, 250);
+ctx.drawImage(earth, 0, Land - 250, 800, 500);
+   fill("rgb(200, 100, 50)");
+   circle(400, Land - 10, 10);
   
 //speed
 var speed = 5;
