@@ -159,13 +159,13 @@ icething3(Ice.x3, Ice.y3 -300, wideIce.w3, tallIce.t3);
 icething4(Ice.x4, Ice.y4 -300, wideIce.w4, tallIce.t4);
 
 //Ice5
-icething5(Ice.x5 +200, Ice.y5 -300, wideIce.w5, tallIce.t5);
+icething5(Ice.x5 +175, Ice.y5 -300, wideIce.w5, tallIce.t5);
 
 //Ice6
 icething6(Ice.x6, Ice.y6 -300, wideIce.w6, tallIce.t6);
     
 //land
-ctx.drawImage(earth, 0, Land + 100, 800, 500);
+ctx.drawImage(earth, 0, Land + 150, 800, 500);
   
 //speed
 var speed = 5;
@@ -212,7 +212,7 @@ if(Ice.y3 +100 >=550 && Ice.y3 -100 <=500 && boatX +20 >=500 && boatX <=800){con
 
 if(Ice.y4 +100 >=550 && Ice.y4 -100 <=500 && boatX +20 >=0 && boatX <=550){console.log("4");playGame = 0;}
     
-if(Ice.y5 +100 >=550 && Ice.y5 -100 <=500 && boatX +20 >=450 && boatX <=800){console.log("5");playGame = 0;}
+if(Ice.y5 +100 >=550 && Ice.y5 -100 <=500 && boatX +20 >=475 && boatX <=800){console.log("5");playGame = 0;}
     
 if(Ice.y6 +100 >=550 && Ice.y6 -100 <=500 && boatX +20 >=0 && boatX <=450 ){console.log("6");playGame = 0;}
 
