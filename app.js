@@ -53,7 +53,7 @@ var tallIce = {
    y3:-900 - tallIce.t3 / 2, x3:650 - wideIce.w3 / 2,
    y4:-1300 - tallIce.t4 / 2, x4:300 - wideIce.w4 / 2, 
    y5:-1700 - tallIce.t5 / 2, x5:500 - wideIce.w5 / 2,
-   y6:-2100 - tallIce.t6 / 2, x6:240 - wideIce.w6 / 2
+   y6:-2100 - tallIce.t6 / 2, x6:240 - wideIce.w6 / 2,
 };
 var Land = -3600;
 
@@ -76,37 +76,43 @@ function icething5 (x, y, width, height) {
 function icething6 (x, y, width, height) {
   ctx.drawImage(icecube, x, y, width, height);
 }
+
 //reset thing 
 function reset () {
- boatX = 200;
+ boatX = 400;
  boatMoveSide = 0;
  side = undefined;
+ 
  wideIce.w1 = 400 *2;
- wideIce.w2 = 280 *3;
- wideIce.w3 = 320 *3;
+ wideIce.w2 = 280 *2;
+ wideIce.w3 = 320 *2;
  wideIce.w4 = 520 *2;
- wideIce.w5 = 600 *3;
- wideIce.w6 = 600 *3;
+ wideIce.w5 = 600 *1.5;
+ wideIce.w6 = 600 *2;
+
  tallIce.t1 = 420;
  tallIce.t2 = 560;
  tallIce.t3 = 630;
- tallIce.t4 = 840;
- tallIce.t5 = 770;
- tallIce.t6 = 770;
+ tallIce.t4 = 840 /1.5;
+ tallIce.t5 = 770 /1.5;
+ tallIce.t6 = 770 /1.5;
+ 
  Ice.y1 = -400 - tallIce.t1 / 2;
  Ice.x1 = 400 - wideIce.w1 / 2;
  Ice.y2 = -770 - tallIce.t2 / 2;
  Ice.x2 = 170 - wideIce.w2 / 2;
- Ice.y3 = -900 - tallIce.t3 / 2;
+ Ice.y3 = -900 - tallIce.t3 / 2; 
  Ice.x3 = 650 - wideIce.w3 / 2;
- Ice.y4 = -1300 - tallIce.t4 / 2;
+ Ice.y4 = -1300 - tallIce.t4 / 2; 
  Ice.x4 = 300 - wideIce.w4 / 2;
- Ice.y5 = -1700 - tallIce.t5 / 2;
+ Ice.y5 = -1700 - tallIce.t5 / 2; 
  Ice.x5 = 500 - wideIce.w5 / 2;
  Ice.y6 = -2100 - tallIce.t6 / 2;
  Ice.x6 = 240 - wideIce.w6 / 2;
- Land = -1800;
-}
+ 
+ Land = -3600;
+}//end of reset function thing
+
 //circle code stuff
 function circle (x, y, size) {
   ctx.beginPath();
@@ -165,7 +171,7 @@ icething5(Ice.x5 +175, Ice.y5 -300, wideIce.w5, tallIce.t5);
 icething6(Ice.x6, Ice.y6 -300, wideIce.w6, tallIce.t6);
     
 //land
-ctx.drawImage(earth, 0, Land + 150, 800, 500);
+ctx.drawImage(earth, 0, Land + 175, 800, 500);
   
 //speed
 var speed = 5;
